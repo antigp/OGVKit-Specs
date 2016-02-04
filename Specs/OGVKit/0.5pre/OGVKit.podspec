@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OGVKit"
-  s.version      = "0.5pre"
+  s.version      = "0.6pre"
   s.summary      = "Ogg Vorbis/Theora and WebM media playback widget for iOS."
 
   s.description  = <<-DESC
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                    to play a video or audio file from a URL.
                    DESC
 
-  s.homepage     = "https://github.com/brion/OGVKit"
+  s.homepage     = "https://github.com/antigp/OGVKit"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
       swebmvorbis.dependency 'OGVKit/VorbisDecoder'
     end
   end
-  
+
   # Demuxer module subspecs
   s.subspec "OggDemuxer" do |soggdemuxer|
     soggdemuxer.xcconfig = { 'OTHER_CFLAGS' => '-DOGVKIT_HAVE_OGG_DEMUXER' }
@@ -150,5 +150,5 @@ Pod::Spec.new do |s|
 
     sskel.dependency 'libogg'
   end
-  
+
 end
