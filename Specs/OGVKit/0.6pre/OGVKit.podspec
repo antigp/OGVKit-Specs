@@ -147,7 +147,7 @@ Pod::Spec.new do |s|
                                 "libskeleton/include/skeleton/skeleton_constants.h",
                                 "libskeleton/include/skeleton/skeleton_query.h"
     sskel.header_dir = 'skeleton'
-
+    sskel.version = "0.5pre"
     sskel.dependency 'libogg'
   end
 
